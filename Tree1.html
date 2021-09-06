@@ -8,7 +8,15 @@
     <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 	<script src="https://rawgit.com/blairmacintyre/aframe-look-at-billboard-component/master/dist/aframe-look-at-billboard-component.min.js"></script>
 </head>
+	
 <body style='margin: 10; overflow: hidden;'>
+	    <div
+      style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;"
+    >
+      <button id="opengooglebutton">
+        open google
+      </button>
+    </div>
 	
     <a-scene
         cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
@@ -34,4 +42,11 @@
 		<a-link href="https://cbc-tree-bot.github.io/StreetTreeAR/" title="Back" image="./back button.png" scale="1 1 1"></a-link>
 	</a-camera>
 </a-scene>
+    <script type="text/javascript">
+          
+      $("#opengooglebutton").on("click", function() {
+        window.open("https://www.google.com/", "_blank");
+      });
+    </script>	
+	
 </body>
