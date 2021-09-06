@@ -28,6 +28,6 @@
 	</a-camera>
 </a-scene>
 <div class="centered">
-    <button data-action="Back"></button>
+    <input type="button" value="Go back!" onclick="history.back()">
 </div>
 </body>
