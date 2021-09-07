@@ -15,7 +15,7 @@
       style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;"
     >
       <button>
-        open google
+        Back to the Map
       </button>
     </div>
 	
@@ -43,6 +43,10 @@
        window.history.back();
       });
       
+	document.querySelector("tree1").addEventListener("click", function() {
+       window.history.back();
+      });
+	
       $("#opengooglebutton").on("click", function() {
         window.open("https://www.google.com/", "_blank");
       });
