@@ -12,9 +12,9 @@
 	
 <body style='margin: 10; overflow: hidden;'>
 	    <div
-      style="position: fixed; top:50%; width:100%; text-align: center; z-index: 1;"
+      style="position: fixed; top:90%; width:100%; text-align: center; z-index: 1;"
     >
-      <button>
+      <button id="Back">
         Back to the Map
       </button>
     </div>
@@ -40,11 +40,7 @@
 	</a-camera>
 </a-scene>
 <script type="text/javascript">
-     document.querySelector("button").addEventListener("click", function() {
-       window.history.back();
-      });
-      
-	document.querySelector("tree1").addEventListener("click", function() {
+     document.querySelector("Back").addEventListener("click", function() {
        window.history.back();
       });
 	
