@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>4 GeoAR.js demo</title>
+    <title>Tree 1</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 	<script src="https://rawgit.com/blairmacintyre/aframe-look-at-billboard-component/master/dist/aframe-look-at-billboard-component.min.js"></script>
@@ -14,7 +14,7 @@
 	    <div
       style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;"
     >
-      <button id="opengooglebutton">
+      <button>
         open google
       </button>
     </div>
@@ -38,13 +38,16 @@
 		<a-link href="https://cbc-tree-bot.github.io/StreetTreeAR/" title="Back" image="./back button.png" scale="1 1 1"></a-link>
 	</a-camera>
 </a-scene>
-	<script>
-    AFRAME.registerComponent('clickhandler', {
-        init: function() {
-            this.el.addEventListener('click', () => {
-                alert('Clicked!')
-            });
-    }});
-</script>
+<script type="text/javascript">
+     document.querySelector("button").addEventListener("click", function() {
+        window.open("https://www.google.com/", "_blank");
+      });
+      
+      $("#opengooglebutton").on("click", function() {
+        window.open("https://www.google.com/", "_blank");
+      });
+    </script>
+  </body>
 	
 </body>
+</html>
