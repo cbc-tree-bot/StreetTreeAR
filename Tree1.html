@@ -14,8 +14,10 @@
 	    <div
       style="position: fixed; top:90%; width:100%; text-align: center; z-index: 1;"
     >
+		    <a-link href="https://cbc-tree-bot.github.io/StreetTreeAR/" title="Backbutton" image="./back button.png" scale="1 1 1"></a-link>
       <button id="Back">
         Back to the Map
+	      
       </button>
     </div>
 	
@@ -32,8 +34,9 @@
 	    id="tree1"
 		src="src: url(./Robs_tree3.glb)"
             scale="1 1 1"
+		animation="property: position; from: 0 0 0; to: 0 3 -2; direction: alternate; repeat: indefinite"
               gps-entity-place="latitude: -33.979431; longitude: 151.054563;">
-	       <a-text id="treetext1" value="This is a Not a Gum Tree" align="center" color="white" visible="true" scale="1.3 1.3 1.3" position="0 1.5 0" billboard></a-text>
+	       <a-text id="treetext1" value="This is a Not a Gum Tree" align="center" color="blue" visible="true" scale="1.3 1.3 1.3" position="0 0 -0.5" billboard></a-text>
        </a-gltf-model>
 
         <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-camera="maxDistance: 200;" rotation-reader>
@@ -45,7 +48,7 @@
        window.history.back();
       });
 	
-	document.querySelector("#tree1").addEventListener(clickhandler, function() {
+	document.querySelector("#tree1").addEventListener("click", function() {
        window.history.back();
       });
 	
