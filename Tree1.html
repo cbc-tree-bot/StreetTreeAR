@@ -38,11 +38,13 @@
 		<a-link href="https://cbc-tree-bot.github.io/StreetTreeAR/" title="Back" image="./back button.png" scale="1 1 1"></a-link>
 	</a-camera>
 </a-scene>
-	<script type="text/javascript">
-          
-      $("#opengooglebutton").on('clickhandler', function() {
-        window.open("https://www.google.com/", "_blank");
-      });
-    </script>	
+	<script>
+    AFRAME.registerComponent('clickhandler', {
+        init: function() {
+            this.el.addEventListener('click', () => {
+                alert('Clicked!')
+            });
+    }});
+</script>
 	
 </body>
